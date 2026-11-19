@@ -1,0 +1,19 @@
+[package]
+name = "secretmap"
+version = "0.1.0"
+edition = "2021"
+description = "Render config from a committed map and a pluggable secret store, and deliver it to env files or remote destinations"
+license = "Apache-2.0"
+publish = false
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+ctrlc = { version = "3.5.3", features = ["termination"] }
+getrandom = { version = "0.2", features = ["std"] }
+rpassword = "7"
+serde = { version = "1", features = ["derive"] }
+sha2 = "0.10"
+tempfile = "3"
+toml = "0.8"
+zeroize = "1"
